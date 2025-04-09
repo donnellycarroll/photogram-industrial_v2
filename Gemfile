@@ -82,6 +82,8 @@ group :development do
   gem "pry-rails"
   gem "rails-erd"
   gem "rufo"
+
+  # gem 'rails_db'
 end
 
 group :development, :test do
