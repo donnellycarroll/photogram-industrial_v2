@@ -11,4 +11,9 @@ class UsersController < ApplicationController
     @user = current_user
   end
 
+  def discover
+    @user = current_user
+  end
+
+
 end
