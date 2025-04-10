@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "photos#index"
+  root "users#feed"
 
   devise_for :users
 
@@ -10,5 +10,6 @@ Rails.application.routes.draw do
 
   get ":username" => "users#show", as: :user
   get ":username/liked" => "users#liked", as: :liked
+  get "/" => "users#feed", as: :feed
   
 end
