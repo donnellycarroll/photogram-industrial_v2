@@ -23,4 +23,6 @@ class Comment < ApplicationRecord
   belongs_to :photo
 
   validates :body, presence: true
+  
+  scope :default_order, -> { order("created_at DESC") }
 end
